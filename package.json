@@ -1,0 +1,25 @@
+{
+    "name": "hyperql",
+    "displayName": "hyperql",
+    "description": "hyperql is the standard Hyperlite database query language that makes it easier to communicate with the database.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.32.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "hyperql",
+            "aliases": ["HyperQl", "hyperql"],
+            "extensions": [".hyperql"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "hyperql",
+            "scopeName": "query.hyperql",
+            "path": "./syntaxes/hyperql.tmLanguage.jso  n"
+        }]
+    }
+}
